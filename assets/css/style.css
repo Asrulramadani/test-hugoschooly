@@ -1,0 +1,570 @@
+/* ============== */
+/* ==== Fonts === */
+/* ============== */
+@font-face {
+    font-family: 'quicksand';
+    src: url('../fonts/Quicksand_Bold.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'quicksand-medium';
+    src: url('../fonts/Quicksand_Medium.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    }
+    
+/* ================= */
+/* === Variable ==== */
+/* ================= */
+
+:root {
+    /* Colors */
+    --primary-color : #6369D1;
+    --dark-color : #26344D;
+    --dark-lighten-color : #34435E;
+    --white-color: #FFFFFF;
+    --text-color :  #34435E;
+
+
+    /* Font & Text */
+    --h1 : 40px;
+    --h2 : 30px;
+    --h3 : 27px; 
+    --card-title : 22px;
+    
+
+
+}
+
+
+/* ==================== */
+/*  === Base Style ===  */
+/* ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    overflow: hidden;
+} */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+#app,
+#page-berita {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ================== */
+/* === Main Style === */
+/* ================== */
+
+
+/* ================== */
+/* === header === */
+/* ================== */
+#header {
+    background-color:  var(--primary-color);
+    height: 50px;
+    padding: 0 1rem;
+    line-height: 50px;
+    font-family: 'quicksand-medium';
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+/* #header ul{
+    margin-left: 20px;
+} */
+
+#header ul li  {
+    color: white;
+}
+
+#header ul li i {
+    margin-right: 7px;
+}
+#header ul li span {
+    margin-right: 30px;
+    font-size: 13px;
+    font-family: 'quicksand';
+}
+#header ul .nav-item-mail span {
+    margin-right: 820px;
+}
+#header ul li .fab {
+    margin-left: 10px;
+    color: white;
+}
+
+/* ================== */
+/* === akhir header === */
+/* ================== */
+
+
+/* ================== */
+/* === show header === */
+/* ================== */
+#show-header {
+    display: none;
+}
+#show-header .col{
+    /* width: 100%;  */
+    height: auto;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#show-header .col .fa {
+    font-size: 20px;
+    width: 30px;
+    color: var(--primary-color);
+}
+
+/* ================== */
+/* === akhir show header === */
+/* ================== */
+
+
+/* ================== */
+/* === logo === */
+/* ================== */
+#logo {
+    margin: 10px 30px;
+}
+
+#logo .nav-button{
+    display: none;
+}
+
+#logo .logosmk {
+    overflow: hidden;
+}
+
+#logo .logosmk img {
+    width: 290px;
+}
+/* ================== */
+/* === akhir logo === */
+/* ================== */
+
+
+
+/* ================== */
+/* === navbar === */
+/* ================== */
+#navbar {
+    margin-bottom: 40px;
+    font-family: 'roboto';
+    font-weight: normal;
+    font-style: normal;
+}
+#navbar .container-fluid {
+    margin-left: 10px;
+}
+
+#navbar ul li .active.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px 12px;
+}
+
+#navbar ul li {
+    margin-right: 28px;
+    font-size: 15px;
+}
+
+/* #navbar ul li .nav-active {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0px 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; */
+
+/* ================== */
+/* === akhir navbar === */
+/* ================== */
+
+
+/* ================== */
+/* === corousel === */
+/* ================== */
+#corousel {
+    margin-bottom: 71px;
+}
+/* ================== */
+/* === akhir corousel === */
+/* ================== */
+
+
+/* ================== */
+/* === decor === */
+/* ================== */
+#decor {
+    margin-bottom: 30px;
+}
+#decor .container .row .judul h2,
+#berita .container .row h2 {
+    font-size: var(--h1);
+    color: #34435E;
+}
+
+#decor .container .row .judul {
+    margin-bottom: 21px;
+}
+
+ .container .row ul {
+    margin-bottom: 45px;
+}
+
+ .container ul li {
+    color : var(--primary-color);
+}
+
+ .container .row ul li hr {
+    width: 131px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 2px;
+}
+
+
+/* === decor card === */
+#decor .container .row .card {
+    background-color: var(--primary-color);
+    width: 280px;
+    height: 320px;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#decor .container .row .card img{
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-top: 38px;
+}
+
+#decor .container .row .card .card-title{
+    color: white;
+    text-align: center;
+    margin-bottom: 45px;
+    
+}
+#decor .container .row .card .card-text a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+}
+#decor .container .row .card .card-text {
+    text-align: center;
+}
+
+#decor .container .row .card .card-text i{
+    font-size: 18px;
+    margin-left: 11px;
+    line-height: auto;
+}
+
+#decor .container .row .card .informasi {
+    margin-bottom: 23px ;
+}
+
+/* ================== */
+/* === akhir decor === */
+/* ================== */
+
+
+
+/* ================== */
+/* === berita === */
+/* ================== */
+#berita {
+    background-color: var(--primary-color);
+    height: auto;
+    padding-bottom: 4rem;
+    margin-bottom: 90px;
+}
+
+#berita .container .row h2 {
+    color: white;
+    margin: 16px;
+    font-family: 'quicksand';
+}
+
+#berita .container .row ul {
+    margin-bottom: 65px;
+}
+
+#berita .container ul li {
+    color : white;
+}
+
+#berita .container .row ul li hr {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 2px;
+}
+
+#berita .container-fluid .row .card {
+    height: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+#berita .container-fluid .row .card a{
+    text-decoration: none;
+}
+
+#berita .container-fluid .row .card .card-title{
+    font-size: 22px;
+    color: #34435E;
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 32px;
+    font-family: "quicksand";
+    font-weight: 800;
+}
+
+#berita .container-fluid .row .card .card-text {
+    font-size: 17px;
+    text-align:center;
+    font-family: "roboto";
+}
+
+#berita .container-fluid .row .card .card-title-long {
+    margin-bottom: 10px;
+}
+
+#berita .container-fluid .row .btn {
+    font-size: 17px;
+    font-family: "quicksand";
+}
+
+#berita .container-fluid .row .btn:hover{
+    color : var(--primary-color);     
+}
+
+#berita .container-fluid .row a i:first-child {
+    margin-right: 5px;
+}
+
+#berita .container-fluid .row a i:last-child {
+    margin-left: 5px;
+}
+/* ================== */
+/* === akhir berita === */
+/* ================== */
+
+
+/* ================== */
+/* === Galllery === */
+/* ================== */
+#gallery {
+    margin-bottom: 30px;
+    font-family: 'quicksand';
+}
+#gallery .container .row h2,
+#page-berita #berita .container .row h2 {
+    font-size: var(--h1);
+    color: #34435E;
+    margin-bottom: 21px;
+   
+}
+
+#gallery .container ul li {
+    color : var(--primary-color);
+}
+
+#gallery .container .row ul li hr {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 2px;
+}
+
+#gallery .container .row .card {
+    margin-top: 1rem;
+}
+/* ================== */
+/* === akhir gallery === */
+/* ================== */
+
+
+/* ================== */
+/* === Tentang === */
+/* ================== */
+#tentang {
+    background-color: var(--dark-lighten-color );
+    color: white;
+    padding-bottom: 96px;
+    font-family: "quicksand";
+}
+
+#tentang .container-fluid {
+    padding: 0 2rem;
+}
+
+#tentang .container-fluid .row .judul {
+    font-size: 27px;
+    margin-bottom: 38px;
+    
+}
+#tentang .container-fluid .row .tentang {
+    font-size: 18px;
+    margin-bottom: 84px;
+}
+
+#tentang .container-fluid .row .judul_kontak {
+    font-size: 27px;
+    margin-bottom: 48px;
+}
+
+#tentang .container-fluid .row p i {
+    margin-right: 21px;
+    font-size: 18px;
+}
+
+#tentang .container-fluid .row  p {
+font-size: 18px;
+margin-bottom: 37px;
+}
+/* ================== */
+/* === akhir tentang === */
+/* ================== */
+
+
+/* footer */
+#footer {
+    height: auto;
+    padding: 1rem 0;
+    background-color: #26344D;
+    color: white;
+    text-align: center;
+    font-family: "quicksand";
+}
+/* ================== */
+/* === akhir footer === */
+/* ================== */
+
+
+
+/* ================== */
+/* === page berita === */
+/* ================== */
+
+#page-berita #berita {
+    margin-top: 2rem;
+    height: auto;
+    margin-bottom: 90px;
+    padding-bottom: 5rem;
+}
+
+#page-berita #berita .container .row h2 {
+    color: white;
+    margin: 2rem 0 1rem;
+}
+
+#page-berita #berita .container .row ul {
+    margin-bottom: 3rem;
+}
+
+#page-berita #berita .container-fluid .row .card {
+    height: auto;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    background-color: var(--primary-color);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#page-berita #berita .container-fluid .row .card .card-title{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 32px;
+    font-family: "quicksand";
+}
+
+#page-berita #berita .container-fluid .row .card .card-text {
+    font-size: 17px;
+    text-align:center;
+    font-family: "roboto";
+    color: white;
+}
+
+#page-berita #berita .container-fluid .row .card .card-title-long {
+    margin-bottom: 10px;
+}
+
+#page-berita #berita .container-fluid .row .btn {
+    font-size: 17px;
+    font-family: "quicksand";
+    margin: .5rem;
+}
+
+#page-berita #berita .container-fluid .row .btn:hover{
+    color : var(--primary-color);     
+}
+
+
+/* ================== */
+/* === akhir berita === */
+/* ================== */
+
+
+
+
+
+/* ====================== */
+/* === Single artikel === */
+/* ====================== */
+
+#artikel {
+    
+}
+
+/* ====================== */
+/* === Akhir single artikel === */
+/* ====================== */
+
+
+

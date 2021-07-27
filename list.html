@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- link bootstrap online versi 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- link aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- link font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>    
+    
+    <section id="page-berita">
+        <!-- section header -->
+        <section id="header">                
+            <div class="container">
+
+                <!-- header saat tampilan mobile -->
+                <div class="row  mobile " >
+                    <div class="col justify-center justify-contenbetween">
+                        <ul class="nav justify-content-evenly">
+                            <li class="nav-item">
+                                <a href=""><i class="fas fa-phone-alt"></i></a>
+                            </li>
+                            <li class="nav-item" >
+                                <a href=""><i class="far fa-envelope"></i></a>
+                            </li>               
+                            <li class="nav-item">
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>   
+                            <li class="nav-item ">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>    
+                            <li class="nav-item ">
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </li>                   
+                            <li class="nav-item ">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>    
+                        </ul>             
+
+                    </div>
+                    <!-- akhir header saat tampilan mobile -->
+    
+                </div>
+                <div class="row justify-content-between pc" >
+                    <div class="col-md-6 ">
+
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <i class="fas fa-phone-alt"></i><span>081241329455</span> 
+                            </li>
+                            <li class="nav-item" >
+                                <i class="far fa-envelope"></i><span>contact@smkcakrawala.com</span>
+                            </li>               
+                        </ul>     
+                    </div>
+
+                    <div class="col-md-2 col-sm-5" >
+
+                        <ul class="nav justify-content-between">
+                            <li class="nav-item">
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>   
+                            <li class="nav-item ">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>    
+                            <li class="nav-item ">
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </li>                   
+                            <li class="nav-item ">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>    
+                        </ul>             
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- akhir section header -->
+
+        <!-- Button untuk menampilkan/menyembunyikan header pada tampilan mobile -->
+        <section id="show-header">
+                    <div class="col">
+                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </div>
+        </section>
+        <!-- Akhir button untuk menampilkan atau menyembunyikan header -->
+
+        
+        <!-- section navbar -->
+
+
+
+        <section id="navbar">
+
+              <!-- logo -->
+              <section id="logo">
+                  <div class="logosmk">
+                      <img src="assets/images/homepage/logo.svg" alt="">
+                  </div>
+                  <div class="nav-button">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                      </button>
+                  </div>
+              </section>
+              <!-- akhir logo -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">                  
+                    
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link  btn active" aria-current="page" href="#">HOME</a>
+                            </li>                        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  btn active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PROFIL
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Sejarah</a></li>
+                                <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
+                                <li><a class="dropdown-item" href="#">Prestasi Sekolah</a></li>
+                                </ul>
+                            </li>       
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                DATA
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Guru/Pendidik</a></li>
+                                <li><a class="dropdown-item" href="#">Siswa</a></li>
+                                </ul>
+                            </li>                      
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                NEWS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Berita</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                </ul>
+                            </li>                      
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                OSIS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Tentang OSIS</a></li>
+                                <li><a class="dropdown-item" href="#">Struktur</a></li>
+                                <li><a class="dropdown-item" href="#">Galeri</a></li>
+                                </ul>
+                            </li>                      
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                GALLERY
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Galeri Foto</a></li>
+                                <li><a class="dropdown-item" href="#">Galeri Vidio</a></li>
+                                </ul>
+                            </li>                      
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PPDB 2021
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Info PPDB 2021</a></li>
+                                <li><a class="dropdown-item" href="#">Pengumuman</a></li>
+                                </ul>
+                            </li>                      
+                            </ul>
+                        
+                        </div>
+                        </div>
+                    </nav>
+        </section>
+        <!-- akhir navbar -->
+
+
+
+    <!-- section berita -->
+    <section id="berita" >
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row">
+                <!-- judul -->
+                <div class="col-md-12 text-center">
+                    <h2>BERITA TERBARU</h2>
+                </div>
+                <!-- akhir judul -->
+                <div class="col-md-12 " data-aos="fade-up" data-aos-delay="100">
+                    <ul class="nav d-flex justify-content-center">
+                        <li><hr></li>
+                        <li><i class="far fa-newspaper  fa-2x"></i></li>
+                        <li><hr></li>
+                    </ul>
+                </div>                  
+            </div>
+        </div>
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#">
+                            <img src="assets/images/homepage/card-img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Kegiatan Studytour</h5>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#">
+                        <img src="assets/images/homepage/card-img2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title card-title-long">Meningkatkan Minat <br>
+                            Baca Siswa</h5>
+                        </a>
+                        <p class="card-text ">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card " data-aos="fade-up" data-aos-delay="300">
+                        <a href="#">
+                        <img src="assets/images/homepage/card-img3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title card-title-long">Perkemahan Pramuka</h5>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#">
+                            <img src="assets/images/homepage/card-img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Kegiatan Studytour</h5>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#">
+                        <img src="assets/images/homepage/card-img2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title card-title-long">Meningkatkan Minat <br>
+                            Baca Siswa</h5>
+                        </a>
+                        <p class="card-text ">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card " data-aos="fade-up" data-aos-delay="300">
+                        <a href="#">
+                        <img src="assets/images/homepage/card-img3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title card-title-long">Perkemahan Pramuka</h5>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#">
+                            <img src="assets/images/homepage/card-img1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Kegiatan Studytour</h5>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#">
+                        <img src="assets/images/homepage/card-img2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title card-title-long">Meningkatkan Minat <br>
+                            Baca Siswa</h5>
+                        </a>
+                        <p class="card-text ">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card " data-aos="fade-up" data-aos-delay="300">
+                        <a href="#">
+                        <img src="assets/images/homepage/card-img3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title card-title-long">Perkemahan Pramuka</h5>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud 
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>                                  
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center" data-aos="fade-right" data-aos-delay="100">
+                    <a href="" class="btn btn-outline-light "><i class="fas fa-arrow-left"></i>Sebelumnya</a>
+                </div>
+                <div class="col-md-3 text-center" data-aos="fade-left" data-aos-delay="100">
+                    <a href="" class="btn btn-outline-light ">Selanjutnya<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir section berita -->
+
+    <!-- section tentang -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#34435E" fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,133.3C384,149,480,171,576,192C672,213,768,235,864,218.7C960,203,1056,149,1152,122.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <section id="tentang">
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="judul">TENTANG SMKS CAKRAWALA</h2>
+                </div>
+                <div class="col-md-10" data-aos="fade-up" data-aos-delay="200">
+                    <p class="tentang">SMK Swasta Cakrawala merupakan  salah satu Lembaga Pendidikan Menengah Kejuruan 
+                        di Kota Makassar, Sulawesi Selatan yang menyelenggarakan Program Pendidikan
+                        dengan 10 kompetensi keahlian. Pada tahun 2019 menjadi salah satu Sekolah dengan
+                        kinerja terbaik di Indonesia.  Tenaga Pendidik dan Kependidikan yang kompeten
+                        adalah salah satu keunggulannya</p>
+                </div>
+                <div class="col-md-12 " data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="judul_kontak">KONTAK</h2>
+                </div>
+                <div class="col-md-7">
+                    <p data-aos="fade-up" data-aos-delay="100"><i class="fas fa-map-marker-alt" ></i>Kota Makassar, Sulawesi Selatan</p>
+                    <p data-aos="fade-up" data-aos-delay="200"><i class="fas fa-phone-alt "></i>081241329455</p>
+                    <p  data-aos="fade-up" data-aos-delay="300"><i class="far fa-envelope"></i>contact@smkcakrawala.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir tentang -->
+
+    <!-- section footer -->
+    <section id="footer">
+            <span>2021 | Designed by AcmeDev team </span>
+    </section>
+    <!-- section footer -->
+    </section>
+
+    <!-- link bootstrap js online versi 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- aos js online -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- akhir aos -->
+</body>
+</html>
